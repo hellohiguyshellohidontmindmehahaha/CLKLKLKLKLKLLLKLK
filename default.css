@@ -4,10 +4,10 @@
       display: flex-start;
       width: 600px;
       height: 800px;
-      background-color: rgb(106, 0, 89);
+      background-color: rgb(46, 46, 46);
       overflow: hidden;
       overflow-y: auto;
-      border: 10px outset rgb(143, 17, 136);
+      border: 10px outset rgb(150, 150, 150);
       
     }
     body {
@@ -16,7 +16,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("../Images/BGS/PurpleGliter.gif");
+        background-image: url("Media/Blackroses.gif");
         background-repeat: repeat;       
         background-position: center;    
         background-size: 200px;          
@@ -24,33 +24,33 @@
     }
     h1 {
       font-size: 35px;
-      color: rgb(255, 191, 252);
+      color: rgb(150, 150, 150);
       text-align: center;
     }
     p1 {
       font-size: 15px;
-      color: rgb(255, 191, 252);
+      color: rgb(150, 150, 150);
       text-align: center;
     }
     p2 {
       font-size: 20px;
-      color: rgb(255, 191, 252);
+      color: rgb(150, 150, 150);
       text-align: center;
     }
     h4 {
       font-size: 15px;
-      color: rgb(255, 191, 252);
+      color: rgb(150, 150, 150);
       text-align: center;
     }
     li {
       font-size: 15px;
-      color: rgb(255, 191, 252);
+      color: rgb(150, 150, 150);
       
     }
     .bimg{
           display: inline-block;
           margin: 10px;
-          border: 10px outset rgb(200, 64, 193);
+          border: 10px outset rgb(150, 150, 150);
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -59,7 +59,7 @@
     #Randimg{
           display: inline-block;
           margin: 10px;
-          border: 10px outset rgb(200, 64, 193);
+          border: 10px outset rgb(150, 150, 150);
           display: block;
           margin-left: auto;
           margin-right: auto;
@@ -67,12 +67,12 @@
         }    
     h2 {
       font-size: 20px;
-      color: rgb(255, 191, 252);
+      color: rgb(150, 150, 150);
       text-align: center;
     }
     h3 {
       font-size: 17px;
-      color: rgb(255, 191, 252);
+      color: rgb(150, 150, 150);
       text-align: center;
     }
     .center {
@@ -95,15 +95,15 @@
         height:100px;
     }
     .TopBar {
-        border: 10px outset rgb(127, 14, 122);
-        background-color: rgb(141, 41, 131);
+        border: 10px outset rgb(150, 150, 150);
+        background-color: rgb(46, 46, 46);
         text-align: center;
         height:100px;
         overflow-x: auto;
     }
     #SplashtxtBar {
-        border: 10px outset rgb(127, 14, 122);
-        background-color: rgb(141, 41, 131);
+        border: 10px outset rgb(150, 150, 150);
+        background-color: rgb(19, 18, 18);
         text-align: center;
         height:25px;
         overflow-x: auto;
@@ -120,12 +120,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(143, 17, 136);
+  background: rgb(19, 18, 18);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b045c9;
+  background: rgb(150, 150, 150);
 }
 
 /* Handle on hover */
