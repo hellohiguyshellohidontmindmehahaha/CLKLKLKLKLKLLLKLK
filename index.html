@@ -49,8 +49,17 @@
   </div>
 </body>
     <script>
-          let TxtId = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
-          const container = document.getElementById("SplashtxtBar");
+          
+        let Splashtxt = ["Fuck Edgar", "Yo... gurt", "I damn Rich Preece to eternal damnation", "I just wanted to see tung tung tung sahur one last time", " (Funny splash text goes here)", "Happy birthday patrick!!!", "Do you realize, do you realize something...", "Also try Terraria!", "AIPAC free!", "GLORY TO ISREAL - Marco", "Can the admins stop blocking this in technicality this educational."];
+        let TxtId = Math.floor(Math.random() * (Splashtxt.length - 1 + 1)) + 1;
+        const container = document.getElementById("SplashtxtBar");
+        container.innerHTML = "<p1>" + Splashtxt[TxtId] + "</p1>";
+        setInterval(() => {
+          TxtId = Math.floor(Math.random() * (Splashtxt.length - 1 + 1)) + 1;
+          container.innerHTML = "<p1>" + Splashtxt[TxtId] + "</p1>";
+        }, 5000);
+        
+        /*  
         if (TxtId == 1) {
             container.innerHTML = "<p1> Fuck Edgar" + "</p1>";
         } else if (TxtId == 2) {
@@ -72,8 +81,18 @@
         } else if (TxtId == 10) {
             container.innerHTML = "<p1> GLORY TO ISREAL - Marco"  + "</p1>";
         }
+        this is the old script that was butttt
+        */
         let ImgId = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
         const imgcontainer = document.getElementById("Randimg");
+        let imgarray = ["Media/Catimgs/blails.jpg", "Media/Catimgs/Doo_Doo_Fart.png", "Media/Catimgs/Dietzen_D._Dinklebottom.png", "Media/Catimgs/image.png", "Media/Catimgs/IMG_0789.jpeg", "Media/Catimgs/Screenshot 2026-03-12 11.21.45 AM.png", "Media/Catimgs/unnamed (1).png", "Media/Catimgs/unnamed (2).png", "Media/Catimgs/unnamed (3).png", "Media/Catimgs/unnamed.png", "Media/Catimgs/image_100.jpg"];
+        imgcontainer.src = imgarray[ImgId];
+         setInterval(() => {
+          ImgId = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+          imgcontainer.src = imgarray[ImgId];
+        }, 7000);
+        
+        /*
         if (ImgId == 1) {
             imgcontainer.src = "Media/Catimgs/blails.jpg";
         } else if (ImgId == 2) {
@@ -99,5 +118,6 @@
         } else if (ImgId == 12) {
             imgcontainer.src = "Media/Catimgs/image_100.jpg";
         }
+        */
     </script>
 </html>

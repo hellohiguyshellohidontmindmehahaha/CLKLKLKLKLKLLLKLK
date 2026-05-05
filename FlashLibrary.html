@@ -84,16 +84,13 @@
         function loadGame(swfFile) {
             const container = document.getElementById("ruffle-container");
 
-            // Clear previous game
             container.innerHTML = "";
 
-            // Create new Ruffle player
             const ruffle = window.RufflePlayer.newest();
             const player = ruffle.createPlayer();
 
             container.appendChild(player);
 
-            // Load the selected SWF
             player.load({
                 url: "SWFs/" + swfFile,
                 backgroundColor: "#000000",
