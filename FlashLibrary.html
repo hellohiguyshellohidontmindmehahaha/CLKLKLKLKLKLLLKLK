@@ -47,7 +47,8 @@
     <h1>Flash Library</h1>
 
     <p>Click 2 swap</p>
-
+    <br>
+    <button id="random-game">Random Gayme</button>
     <div class="TopBar">
         <button class="swapbutton" data-swf="bloonstd5.swf">Bloons TD 5</button>
         <button class="swapbutton" data-swf="bloonstd4.swf">Bloons TD 4</button>
@@ -103,6 +104,13 @@
                 const swf = btn.dataset.swf;
                 loadGame(swf);
             });
+        });
+        // rand button logic
+        document.getElementById("random-game").addEventListener("click", () => {
+            const buttons = document.querySelectorAll(".swapbutton"); // get the buttons
+            const randomIndex = Math.floor(Math.random() * buttons.length); // get swf paths from buttons div or something yeah 
+            const swf = buttons[randomIndex].dataset.swf;
+            loadGame(swf);
         });
     </script>
     <br>
